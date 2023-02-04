@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    overflow-x: hidden;
+  }
+/*KEYFRAMES*/
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*SCROLLBAR*/
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #444d50;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #059bc0;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #38cff5;
+}
+/*NAV*/
+.topnav {
+    display: flex;
+    background-color: rgb(22, 22, 26);
+    padding:10px 10px 0px 20px;
+    z-index: 1002;
+    width:auto;
+}
+
+.topnav .links {
+  display: flex;
+  align-items: center;
+}
+
+.topnav img {
+  margin-right: 10px;
+  width:30px;
+  border-bottom: rgb(228, 228, 231, 0) solid 5px;
+}
+.topnav a:last-child {
+    margin-left: auto;
+    text-align: right;
+}
+  .topnav a {
+    float: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    color: #727272;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: .3s ease-in-out all;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: rgb(255, 255, 255,0) solid 5px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(255, 255, 255,0);
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(228, 228, 231, 0) solid 5px;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(255, 255, 255,0);
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(255, 255, 255, 0) solid 5px;
+  }
+  /*Login*/
+  .center {
+    margin:250px auto auto auto;
+    width: 20%;
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+  }
+  .login{
+    background-color: white;
+    width:100%;
+    padding:20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .login img{
+    width:80%;
+  }
+  .login table, .login table tr, .login table tr td{
+   width:100%;
+   text-align: center;
+  }
+  .login table tr td.icon{
+    width:505px;
+  }
+  .login table tr td.submit{
+    text-align: center;
+    width:100%;
+
+  }
+  .login form input{
+    width:90%;
+    margin:5px;
+    height:45px;
+    background: rgb(22, 22, 26,0);
+    border:none;
+    outline:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#424242;
+  }
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#424242;
+}
+.login form input[type=submit]{
+  width:93%;
+  background-color: #5a5858;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.login form input[type=submit]:hover{
+  background-color: black;
+}
+
+/* MAIN */
+.error{
+  background-color: rgb(212, 73, 73);
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  width:100%;
+  text-align: center;
+  padding:5px;
+}
+.top{
+  background-color: white;
+  width:100%;
+  padding:20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position:-webkit-sticky;
+  border-bottom: rgb(22, 22, 26) 2px solid;
+  color:#424242;
+  z-index: 100;
+}
+select{
+  width:20%;
+}
+.top form input,select{
+  width:10%;
+  margin:5px;
+  display: inline-block;
+  padding:10px;
+  background: rgb(255, 255, 255);
+  border:rgb(22, 22, 26) 1px solid;
+  outline:none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#424242;
+}
+
+.top form input[type=submit]{
+  width:33%;
+  background-color: #5a5858;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.top form input[type=submit]:hover{
+  background-color: black;
+}
+
+.filter form input{
+  width:8%;
+  margin:5px;
+  display: inline-block;
+  padding:10px;
+  background: rgb(255, 255, 255);
+  border:rgb(22, 22, 26) 1px solid;
+  outline:none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#424242;
+}
+
+.filter form input[type=submit]{
+  background-color: #585a5a;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding:5px;
+  transition: all .2s ease-in-out;
+}
+.filter form input[type=submit]:hover{
+  background-color: black;
+}
+.content{
+  margin:80px auto auto auto;
+  background-color: white;
+  width:95%;
+  padding-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 1;
+}
+.content h1{
+  background-color: rgb(22, 22, 26);
+  color:white;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.spacing{
+  padding:20px;
+}
+.content table{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding:20px;
+  border-collapse: collapse;
+}
+.content tr:nth-child(even) {
+  background-color: #dadada;
+}
+.content table th{
+  background-color: #5a5858;
+  color:white;
+  padding: 10px;
+  font-size: 10px;
+}
+.content table td{
+  border: #5a5858 1px solid;
+  padding:10px;
+  text-align: center;
+}
+.content button{
+  width:100px;
+  background-color: #000000;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  outline:none;
+  border:none;
+  padding: 15px;
+  width:auto;
+  margin:5px;
+}
+.content button:hover{
+  background-color: rgb(63, 173, 113);
+}
+td.actions{
+  max-width:20%;
+  width:15%;
+}
+td.small{
+  text-transform: uppercase;
+  width:5%;
+  font-size: 12px;
+}
+
+td.timein,td.timeout{
+  width:8%;
+}
+td.timein{
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(97, 175, 136);
+  color:white;
+  font-weight: bold;
+}
+td.shift{
+  width:5%;
+}
+td.shift {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1px;
+}
+td.timeout{
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(216, 97, 97);
+  color:white;
+  font-weight: bold;
+}
+td.position{
+  font-size: 12px;
+  width:150px;
+}
+span.employee{
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(44, 119, 82);
+  color:white;
+  padding: 5px;
+  font-weight: bold;
+}
+span.admin{
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(250, 247, 51);
+  color:rgb(0, 0, 0);
+  padding: 5px;
+  font-weight: bold;
+}
+span.records{
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: rgb(39, 101, 182);
+  color:white;
+  padding: 5px;
+  font-weight: bold;
+}
+a#edit{
+  background-color: rgb(97, 119, 216);
+  text-decoration: none;
+  color:white;
+  padding:5px;
+  transition: all .2s ease-in-out;
+}
+a#edit:hover{
+  background-color: rgb(55, 216, 135);
+}
+a#delete{
+  background-color: rgb(216, 97, 97);
+  text-decoration: none;
+  color:white;
+  padding:5px;
+  transition: all .2s ease-in-out;
+}
+a#delete:hover{
+  background-color: rgb(55, 216, 135);
+}
+a#imitate{
+  background-color: rgb(55, 216, 135);
+  text-decoration: none;
+  color:white;
+  padding:5px;
+  transition: all .2s ease-in-out;
+}
+a#imitate, a#delete, a#edit{
+  margin-right:5px;
+}
+a#imitate:hover{
+  background-color: rgb(97, 119, 216);
+}
+.editform form input,select{
+  width:90%;
+  margin:5px;
+  padding:10px;
+  background: rgb(255, 255, 255);
+  border:rgb(22, 22, 26) 1px solid;
+  outline:none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#424242;
+}
+
+.editform form input[type=submit]{
+  width:90%;
+  background-color: rgb(97, 119, 216);
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline:none;
+  border:none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.editform form input[type=submit]:hover{
+  background-color: black;
+}
+
+/*PAGINATION*/
+
+.pagination a{
+  background-color: #585a5a;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding:5px;
+  transition: all .2s ease-in-out;
+}
+.pagination .pagern, .pagination a:hover{
+  background-color: black;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding:5px;
+}
+.pagination .pagern{
+  margin-right:5px;
+}
